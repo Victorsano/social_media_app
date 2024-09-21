@@ -72,6 +72,13 @@ const PostDetails = () => {
                   alt="creator"
                   className="w-8 h-8 lg:w-12 lg:h-12 rounded-full"
                 />
+                <video
+                  src={
+                    post?.creator.videoUrl ||
+                    "/assets/icons/profile-placeholder.svg"
+                  }
+                  className="w-8 h-8 lg:w-12 lg:h-12 rounded-full"
+                />
                 <div className="flex gap-1 flex-col">
                   <p className="base-medium lg:body-bold text-light-1">
                     {post?.creator.name}
